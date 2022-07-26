@@ -23,11 +23,11 @@ class _TabsScreenState extends State<TabsScreen> {
     _pages = [
       {
         'page': const CategoriesScreen(),
-        'title': 'Categories',
+        'title': 'Meals',
       },
       {
         'page': FavoritesScreen(widget.favoriteMeals),
-        'title': 'Your Favorite',
+        'title': 'Your Favorites meals',
       },
     ];
     super.initState();
@@ -43,26 +43,9 @@ class _TabsScreenState extends State<TabsScreen> {
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 2,
-      // initialIndex: 0,
       child: Scaffold(
         appBar: AppBar(
           title: Text(_pages[_selectedPageIndex]['title']),
-          // bottom: const TabBar(
-          //   tabs: [
-          //     Tab(
-          //       icon: Icon(
-          //         Icons.category,
-          //       ),
-          //       text: 'Categories',
-          //     ),
-          //     Tab(
-          //       icon: Icon(
-          //         Icons.star,
-          //       ),
-          //       text: 'Favorites',
-          //     ),
-          //   ],
-          // ),
         ),
         drawer: const MainDrawer(),
         body: _pages[_selectedPageIndex]['page'],
@@ -86,12 +69,6 @@ class _TabsScreenState extends State<TabsScreen> {
             ),
           ],
         ),
-        // body: const TabBarView(
-        //   children: [
-        //     CategoriesScreen(),
-        //     FavoritesScreen(),
-        //   ],
-        // ),
       ),
     );
   }

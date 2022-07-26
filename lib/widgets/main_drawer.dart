@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meals_udemy/screens/shopping_list_screen.dart';
 
 class MainDrawer extends StatelessWidget {
   const MainDrawer({Key? key}) : super(key: key);
@@ -39,7 +40,7 @@ class MainDrawer extends StatelessWidget {
             alignment: Alignment.centerLeft,
             color: Theme.of(context).colorScheme.secondary,
             child: const Text(
-              'Cooking Up!',
+              'MENU 🍽️',
               style: TextStyle(
                   fontWeight: FontWeight.w900,
                   fontSize: 30,
@@ -49,8 +50,11 @@ class MainDrawer extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          buildListTile('Meals', Icons.restaurant, () {
-            Navigator.of(context).pushReplacementNamed('/');
+          buildListTile('Shopping list', Icons.shopping_cart, () {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                  builder: (_) => ShoppingListScreen(), fullscreenDialog: true),
+            );
           }),
         ],
       ),
