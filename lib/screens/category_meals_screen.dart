@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:meals_udemy/dummy_data.dart';
 import 'package:meals_udemy/models/meal.dart';
 import 'package:meals_udemy/widgets/meal_item.dart';
 
 class CategoryMealsScreen extends StatefulWidget {
   static const routeName = '/category-meals';
 
-  const CategoryMealsScreen({Key? key}) : super(key: key);
+  final List<Meal> availableMeals;
+
+  const CategoryMealsScreen(this.availableMeals, {Key? key}) : super(key: key);
   @override
   // ignore: library_private_types_in_public_api
   _CategoryMealsScreenState createState() => _CategoryMealsScreenState();
@@ -29,7 +30,7 @@ class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
           ModalRoute.of(context)!.settings.arguments as Map<String, String>;
       categoryTitle = routeArgs['title'];
       final categoryId = routeArgs['id'];
-      displayedMeals = dummymeals.where((meal) {
+      displayedMeals = widget.availableMeals.where((meal) {
         return meal.categories.contains(categoryId);
       }).toList();
       _loadedInitData = true;
@@ -38,11 +39,11 @@ class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
     super.didChangeDependencies();
   }
 
-  void _removeMeal(String mealId) {
-    setState(() {
-      displayedMeals!.removeWhere((meal) => meal.id == mealId);
-    });
-  }
+  // void _removeMeal(String mealId) {
+  //   setState(() {
+  //     displayedMeals!.removeWhere((meal) => meal.id == mealId);
+  //   });
+  // }
 
   // const CategoryMealsScreen(this.categoryId, this.categoryTitle, {Key? key})
   // : super(key: key);
@@ -72,7 +73,7 @@ class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
             duration: displayedMeals![index].duration,
             affordability: displayedMeals![index].affordability,
             complexity: displayedMeals![index].complexity,
-            removeItem: _removeMeal,
+            // removeItem: _removeMeal,
           );
         },
         itemCount: displayedMeals!.length,
