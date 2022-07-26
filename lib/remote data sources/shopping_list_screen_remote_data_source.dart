@@ -12,6 +12,6 @@ class ShoppingListScreenRemoteDataSource {
   }
 
   Future<void> delete({required String id}) {
-    return FirebaseFirestore.instance.collection('categories').doc().delete();
+    return FirebaseFirestore.instance.collection('categories').doc(id).delete();
   }
 }

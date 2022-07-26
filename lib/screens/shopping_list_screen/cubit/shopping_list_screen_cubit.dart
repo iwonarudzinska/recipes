@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:bloc/bloc.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:meals_udemy/app/enums/enums.dart';
 import 'package:meals_udemy/models/item_model.dart';
 import 'package:meals_udemy/repositories/shopping_list_screen_repository.dart';

@@ -1,5 +1,9 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:meals_udemy/app/enums/enums.dart';
+import 'package:meals_udemy/remote%20data%20sources/shopping_list_screen_remote_data_source.dart';
+import 'package:meals_udemy/repositories/shopping_list_screen_repository.dart';
+import 'package:meals_udemy/screens/shopping_list_screen/cubit/shopping_list_screen_cubit.dart';
 import 'package:meals_udemy/widgets/category_widget.dart';
 
 class ShoppingListScreen extends StatelessWidget {
@@ -24,34 +28,52 @@ class ShoppingListScreen extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Theme.of(context).colorScheme.primary,
-        onPressed: () {
-          FirebaseFirestore.instance.collection('categories').add(
-            {
-              'title': controller.text,
-            },
-          );
-          controller.clear();
-        },
-        child: Text(
-          'ADD',
-          style: TextStyle(
-            color: Theme.of(context).colorScheme.secondary,
+      floatingActionButton: BlocProvider(
+        create: (context) => ShoppingListScreenCubit(
+          ShoppingListScreenRepositories(
+            ShoppingListScreenRemoteDataSource(),
           ),
         ),
+        child: BlocBuilder<ShoppingListScreenCubit, ShoppingListScreenState>(
+          builder: (context, state) {
+            return FloatingActionButton(
+              backgroundColor: Theme.of(context).colorScheme.primary,
+              onPressed: () {
+                context.read<ShoppingListScreenCubit>().add(
+                      title: controller.text,
+                    );
+                controller.clear();
+              },
+              child: Text(
+                'ADD',
+                style: TextStyle(
+                  color: Theme.of(context).colorScheme.secondary,
+                ),
+              ),
+            );
+          },
+        ),
       ),
-      body: StreamBuilder<QuerySnapshot>(
-          stream:
-              FirebaseFirestore.instance.collection('categories').snapshots(),
-          builder: (context, snapshot) {
-            if (snapshot.hasError) {
-              return const Text('Something went wrong');
+      body: BlocProvider(
+        create: (context) => ShoppingListScreenCubit(
+          ShoppingListScreenRepositories(
+            ShoppingListScreenRemoteDataSource(),
+          ),
+        )..start(),
+        child: BlocBuilder<ShoppingListScreenCubit, ShoppingListScreenState>(
+          builder: (context, state) {
+            if (state.status == Status.error) {
+              final errorMessage = state.errorMessage ?? 'Something went wrong';
+              ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                content: Text(errorMessage),
+                backgroundColor: Colors.amber,
+              ));
+
+              if (state.status == Status.loading) {
+                return const Center(child: CircularProgressIndicator());
+              }
             }
-            if (snapshot.connectionState == ConnectionState.waiting) {
-              return const Text("Loading");
-            }
-            final documents = snapshot.data!.docs;
+            final itemModels = state.documents;
             return Container(
               decoration: const BoxDecoration(
                 image: DecorationImage(
@@ -63,37 +85,43 @@ class ShoppingListScreen extends StatelessWidget {
               ),
               child: ListView(
                 children: [
-                  for (final document in documents) ...[
-                    Dismissible(
-                      key: ValueKey(document.id),
-                      background: const DecoratedBox(
-                        decoration: BoxDecoration(
-                          color: Colors.red,
-                        ),
-                        child: Align(
-                          alignment: Alignment.centerRight,
-                          child: Padding(
-                            padding: EdgeInsets.only(
-                              right: 32,
+                  for (final itemModel in itemModels) ...[
+                    BlocBuilder<ShoppingListScreenCubit,
+                        ShoppingListScreenState>(
+                      builder: (context, state) {
+                        return Dismissible(
+                          key: ValueKey(itemModel.id),
+                          background: const DecoratedBox(
+                            
+                            decoration: BoxDecoration(
+                              color: Colors.red,
                             ),
-                            child: Icon(
-                              Icons.delete,
+                            child: Align(
+                              alignment: Alignment.centerRight,
+                              child: Padding(
+                                padding: EdgeInsets.only(
+                                  right: 32,
+                                ),
+                                child: Icon(
+                                  Icons.delete,
+                                ),
+                              ),
                             ),
                           ),
-                        ),
-                      ),
-                      confirmDismiss: (direction) async {
-                        return direction == DismissDirection.endToStart;
+                          confirmDismiss: (direction) async {
+                            return direction == DismissDirection.endToStart;
+                          },
+                          onDismissed: (_) {
+                            context.read<ShoppingListScreenCubit>().delete(
+                                  document: itemModel,
+                                  id: itemModel.id,
+                                );
+                          },
+                          child: CategoryWidget(
+                            itemModel.title,
+                          ),
+                        );
                       },
-                      onDismissed: (_) {
-                        FirebaseFirestore.instance
-                            .collection('categories')
-                            .doc(document.id)
-                            .delete();
-                      },
-                      child: CategoryWidget(
-                        document['title'],
-                      ),
                     ),
                   ],
                   const SizedBox(
@@ -122,7 +150,9 @@ class ShoppingListScreen extends StatelessWidget {
                 ],
               ),
             );
-          }),
+          },
+        ),
+      ),
     );
   }
 }
