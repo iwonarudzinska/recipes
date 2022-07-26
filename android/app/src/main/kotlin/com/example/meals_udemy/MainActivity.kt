@@ -1,4 +1,4 @@
-package com.example.meals_udemy
+package com.iwonarudzinska.meals_udemy
 
 import io.flutter.embedding.android.FlutterActivity
 
