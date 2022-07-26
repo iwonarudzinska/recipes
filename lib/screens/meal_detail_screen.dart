@@ -38,8 +38,10 @@ class MealDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     final mealId = ModalRoute.of(context)?.settings.arguments as String;
     final selectedMeal = dummymeals.firstWhere((meal) => meal.id == mealId);
+    
     return Scaffold(
       appBar: AppBar(
         title: Text(selectedMeal.title),
@@ -67,6 +69,9 @@ class MealDetailScreen extends StatelessWidget {
                     ),
                     child: Text(
                       selectedMeal.ingredients[index],
+                      style: const TextStyle(
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ),

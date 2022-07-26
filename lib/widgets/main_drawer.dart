@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:meals_udemy/screens/filters_screen.dart';
 
 class MainDrawer extends StatelessWidget {
   const MainDrawer({Key? key}) : super(key: key);
@@ -53,24 +52,6 @@ class MainDrawer extends StatelessWidget {
           buildListTile('Meals', Icons.restaurant, () {
             Navigator.of(context).pushReplacementNamed('/');
           }),
-          buildListTile('Filters', Icons.settings, () {
-            Navigator.of(context).pushReplacementNamed(FiltersScreen.routeName);
-          }),
-          // ListTile(
-          //   leading: const Icon(
-          //     Icons.settings,
-          //     size: 26,
-          //   ),
-          //   title: const Text(
-          //     'Filters',
-          //     style: TextStyle(
-          //       fontFamily: 'RobotoCondensed',
-          //       fontSize: 24,
-          //       fontWeight: FontWeight.bold,
-          //     ),
-          //   ),
-          //   onTap: () {},
-          // ),
         ],
       ),
     );

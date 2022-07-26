@@ -11,7 +11,6 @@ class MealItem extends StatelessWidget {
     required this.duration,
     required this.complexity,
     required this.affordability,
-
   }) : super(key: key);
   final String id;
   final String title;
@@ -53,9 +52,7 @@ class MealItem extends StatelessWidget {
       arguments: id,
     )
         .then((result) {
-      if (result != null) {
-        // removeItem(result);
-      }
+      if (result != null) {}
     });
   }
 

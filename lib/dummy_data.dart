@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:meals_udemy/models/category.dart';
 import 'package:meals_udemy/models/meal.dart';
 
-
-
 const dummycategories = [
   Category(
     id: 'c1',
@@ -57,7 +55,6 @@ const dummycategories = [
   ),
 ];
 
-
 final dummymeals = [
   Meal(
     id: 'm1',
@@ -88,10 +85,6 @@ final dummymeals = [
       'The sauce will be done once the spaghetti are.',
       'Feel free to add some cheese on top of the finished dish.'
     ],
-    isGlutenFree: false,
-    isVegan: true,
-    isVegetarian: true,
-    isLactoseFree: true,
   ),
   Meal(
     id: 'm2',
@@ -116,10 +109,6 @@ final dummymeals = [
       'Layer ham, the pineapple and cheese on the white bread',
       'Bake the toast for round about 10 minutes in the oven at 200°C'
     ],
-    isGlutenFree: false,
-    isVegan: false,
-    isVegetarian: false,
-    isLactoseFree: false,
   ),
   Meal(
     id: 'm3',
@@ -148,10 +137,6 @@ final dummymeals = [
       'Bruch buns with ketchup',
       'Serve burger with tomato, cucumber and onion'
     ],
-    isGlutenFree: false,
-    isVegan: false,
-    isVegetarian: false,
-    isLactoseFree: true,
   ),
   Meal(
     id: 'm4',
@@ -183,10 +168,6 @@ final dummymeals = [
       'Remove, and drain on kitchen paper. Fry the parsley in the remaining oil and drain.',
       'Place the schnitzels on awarmed plate and serve garnishedwith parsley and slices of lemon.'
     ],
-    isGlutenFree: false,
-    isVegan: false,
-    isVegetarian: false,
-    isLactoseFree: false,
   ),
   Meal(
     id: 'm5',
@@ -219,10 +200,6 @@ final dummymeals = [
       'Prepare the salad',
       'Add salmon cubes and dressing'
     ],
-    isGlutenFree: true,
-    isVegan: false,
-    isVegetarian: true,
-    isLactoseFree: true,
   ),
   Meal(
     id: 'm6',
@@ -255,10 +232,6 @@ final dummymeals = [
       'Cool down again for at least 4 hours',
       'Serve with orange peel',
     ],
-    isGlutenFree: true,
-    isVegan: false,
-    isVegetarian: true,
-    isLactoseFree: false,
   ),
   Meal(
     id: 'm7',
@@ -286,10 +259,6 @@ final dummymeals = [
       'Heat a lightly oiled griddle or frying pan over medium high heat.',
       'Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake. Brown on both sides and serve hot.'
     ],
-    isGlutenFree: true,
-    isVegan: false,
-    isVegetarian: true,
-    isLactoseFree: false,
   ),
   Meal(
     id: 'm8',
@@ -319,10 +288,6 @@ final dummymeals = [
       'Add coconut milk',
       'Serve with rice'
     ],
-    isGlutenFree: true,
-    isVegan: false,
-    isVegetarian: false,
-    isLactoseFree: true,
   ),
   Meal(
     id: 'm9',
@@ -368,10 +333,6 @@ final dummymeals = [
       'Stop mixing after the egg white disappears. Divide mixture between 2 prepared ramekins. Place ramekins on prepared baking sheet.',
       'Bake in preheated oven until scuffles are puffed and have risen above the top of the rims, 12 to 15 minutes.',
     ],
-    isGlutenFree: true,
-    isVegan: false,
-    isVegetarian: true,
-    isLactoseFree: false,
   ),
   Meal(
     id: 'm10',
@@ -402,9 +363,5 @@ final dummymeals = [
       'Mix with asparagus, salad and dressing',
       'Serve with Baguette'
     ],
-    isGlutenFree: true,
-    isVegan: true,
-    isVegetarian: true,
-    isLactoseFree: true,
   ),
 ];
