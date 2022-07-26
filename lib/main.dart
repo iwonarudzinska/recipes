@@ -54,7 +54,7 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.teal)
             .copyWith(secondary: const Color.fromARGB(255, 46, 54, 122)),
-        canvasColor: const Color.fromARGB(255, 213, 225, 240),
+        canvasColor: const Color.fromARGB(255, 132, 188, 177),
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
               bodyText1: const TextStyle(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meals_udemy/screens/shopping_list_screen.dart';
+import 'package:meals_udemy/screens/shopping_list_screen/shopping_list_screen.dart';
 
 class MainDrawer extends StatelessWidget {
   const MainDrawer({Key? key}) : super(key: key);
@@ -38,13 +38,14 @@ class MainDrawer extends StatelessWidget {
             width: double.infinity,
             padding: const EdgeInsets.all(20),
             alignment: Alignment.centerLeft,
-            color: Theme.of(context).colorScheme.secondary,
-            child: const Text(
+            color: Theme.of(context).colorScheme.primary,
+            child: Text(
               'MENU 🍽️',
               style: TextStyle(
-                  fontWeight: FontWeight.w900,
-                  fontSize: 30,
-                  color: Colors.pink),
+                fontWeight: FontWeight.w900,
+                fontSize: 30,
+                color: Theme.of(context).colorScheme.secondary,
+              ),
             ),
           ),
           const SizedBox(

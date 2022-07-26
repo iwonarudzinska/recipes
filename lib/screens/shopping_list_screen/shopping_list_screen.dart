@@ -13,19 +13,19 @@ class ShoppingListScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 107, 137, 146),
-        title: const Text(
+        backgroundColor: Theme.of(context).colorScheme.primary,
+        title: Text(
           'Shopping List',
           style: TextStyle(
             fontSize: 40,
-            color: Colors.amber,
+            color: Theme.of(context).colorScheme.secondary,
             fontWeight: FontWeight.bold,
           ),
         ),
         centerTitle: true,
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: const Color.fromARGB(255, 224, 50, 50),
+        backgroundColor: Theme.of(context).colorScheme.primary,
         onPressed: () {
           FirebaseFirestore.instance.collection('categories').add(
             {
@@ -34,10 +34,10 @@ class ShoppingListScreen extends StatelessWidget {
           );
           controller.clear();
         },
-        child: const Text(
+        child: Text(
           'ADD',
           style: TextStyle(
-            color: Colors.amber,
+            color: Theme.of(context).colorScheme.secondary,
           ),
         ),
       ),
@@ -56,7 +56,7 @@ class ShoppingListScreen extends StatelessWidget {
               decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: NetworkImage(
-                    'https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80',
+                    'https://media.istockphoto.com/photos/watercolor-textured-background-picture-id887755698?k=20&m=887755698&s=612x612&w=0&h=UcvMcQg07D_WfBT88iOWWXMV5WMRXRM8nqJRXcySUNA=',
                   ),
                   fit: BoxFit.cover,
                 ),
@@ -102,18 +102,18 @@ class ShoppingListScreen extends StatelessWidget {
                   Container(
                     margin: const EdgeInsets.all(20),
                     height: 40,
-                    color: const Color.fromARGB(255, 107, 137, 146),
+                    color: Theme.of(context).colorScheme.primary,
                     child: TextField(
-                      decoration: const InputDecoration(
+                      decoration: InputDecoration(
                         labelText: 'Write what to buy',
                         labelStyle: TextStyle(
-                          color: Color.fromARGB(255, 8, 8, 8),
+                          color: Theme.of(context).colorScheme.secondary,
                         ),
-                        border: OutlineInputBorder(),
+                        border: const OutlineInputBorder(),
                       ),
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 18,
-                        color: Colors.amber,
+                        color: Theme.of(context).colorScheme.secondary,
                       ),
                       cursorColor: Colors.red,
                       controller: controller,
