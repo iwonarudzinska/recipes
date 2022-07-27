@@ -1,16 +1,18 @@
 import 'dart:async';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:meals/app/core/enums.dart';
 import 'package:meals/domain/models/item_model.dart';
 import 'package:meals/domain/repositories/shopping_list_screen_repositories.dart';
 
 part 'shopping_list_screen_state.dart';
+part 'shopping_list_screen_cubit.freezed.dart';
 
 class ShoppingListScreenCubit extends Cubit<ShoppingListScreenState> {
   ShoppingListScreenCubit(this.shoppingListScreenRepositories)
       : super(
-          const ShoppingListScreenState(
+           ShoppingListScreenState(
             documents: [],
             errorMessage: '',
             status: Status.initial,
@@ -22,7 +24,7 @@ class ShoppingListScreenCubit extends Cubit<ShoppingListScreenState> {
 
   Future<void> start() async {
     emit(
-      const ShoppingListScreenState(
+      ShoppingListScreenState(
         documents: [],
         status: Status.loading,
         errorMessage: '',
