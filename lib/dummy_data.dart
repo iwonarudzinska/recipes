@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meals/app/core/enums.dart';
 import 'package:meals/domain/models/category.dart';
 import 'package:meals/domain/models/meal.dart';
 

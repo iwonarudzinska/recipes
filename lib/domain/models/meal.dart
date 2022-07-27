@@ -1,10 +1,4 @@
-enum Complexity { simple, challenging, hard }
-
-enum Affordability {
-  affordable,
-  pricey,
-  luxurious,
-}
+import 'package:meals/app/core/enums.dart';
 
 class Meal {
   final String id;
