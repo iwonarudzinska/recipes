@@ -1,5 +1,5 @@
-import 'package:meals_udemy/models/item_model.dart';
-import 'package:meals_udemy/remote%20data%20sources/shopping_list_screen_remote_data_source.dart';
+import 'package:meals/domain/models/item_model.dart';
+import 'package:meals/data/remote_data_sources/shopping_list_screen_remote_data_source.dart';
 
 class ShoppingListScreenRepositories {
   ShoppingListScreenRepositories(this._shoppinglistscreenRemoteDataSource);

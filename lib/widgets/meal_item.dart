@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:meals_udemy/models/meal.dart';
-import 'package:meals_udemy/screens/meal_detail_screen.dart';
+import 'package:meals/domain/models/meal.dart';
+import 'package:meals/screens/meal_detail_screen.dart';
 
 class MealItem extends StatelessWidget {
   const MealItem({
@@ -12,6 +12,7 @@ class MealItem extends StatelessWidget {
     required this.complexity,
     required this.affordability,
   }) : super(key: key);
+
   final String id;
   final String title;
   final String imageUrl;

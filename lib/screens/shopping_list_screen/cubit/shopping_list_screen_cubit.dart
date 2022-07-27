@@ -1,9 +1,9 @@
 import 'dart:async';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:meals_udemy/app/enums/enums.dart';
-import 'package:meals_udemy/models/item_model.dart';
-import 'package:meals_udemy/repositories/shopping_list_screen_repository.dart';
+import 'package:meals/app/core/enums.dart';
+import 'package:meals/domain/models/item_model.dart';
+import 'package:meals/domain/repositories/shopping_list_screen_repositories.dart';
 
 part 'shopping_list_screen_state.dart';
 

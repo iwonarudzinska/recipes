@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:meals_udemy/models/meal.dart';
-import 'package:meals_udemy/screens/categories_screen.dart';
-import 'package:meals_udemy/screens/favorites_screen.dart';
-import 'package:meals_udemy/widgets/main_drawer.dart';
+import 'package:meals/domain/models/meal.dart';
+import 'package:meals/screens/categories_screen.dart';
+import 'package:meals/screens/favorites_screen.dart';
+import 'package:meals/widgets/main_drawer.dart';
 
 class TabsScreen extends StatefulWidget {
   const TabsScreen(

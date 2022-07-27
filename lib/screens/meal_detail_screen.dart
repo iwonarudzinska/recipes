@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meals_udemy/dummy_data.dart';
+import 'package:meals/dummy_data.dart';
 
 class MealDetailScreen extends StatelessWidget {
   const MealDetailScreen(this.toggleFavorite, this.isFavorite, {Key? key})

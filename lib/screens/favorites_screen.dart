@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:meals_udemy/models/meal.dart';
-import 'package:meals_udemy/widgets/meal_item.dart';
+import 'package:meals/domain/models/meal.dart';
+import 'package:meals/widgets/meal_item.dart';
 
 class FavoritesScreen extends StatelessWidget {
   const FavoritesScreen(this.favoriteMeals, {Key? key}) : super(key: key);

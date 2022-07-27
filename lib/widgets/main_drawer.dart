@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meals_udemy/screens/shopping_list_screen/shopping_list_screen.dart';
+import 'package:meals/screens/shopping_list_screen/shopping_list_screen.dart';
 
 class MainDrawer extends StatelessWidget {
   const MainDrawer({Key? key}) : super(key: key);

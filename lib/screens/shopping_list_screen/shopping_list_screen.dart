@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:meals_udemy/app/enums/enums.dart';
-import 'package:meals_udemy/remote%20data%20sources/shopping_list_screen_remote_data_source.dart';
-import 'package:meals_udemy/repositories/shopping_list_screen_repository.dart';
-import 'package:meals_udemy/screens/shopping_list_screen/cubit/shopping_list_screen_cubit.dart';
-import 'package:meals_udemy/widgets/category_widget.dart';
+import 'package:meals/app/core/enums.dart';
+import 'package:meals/data/remote_data_sources/shopping_list_screen_remote_data_source.dart';
+import 'package:meals/domain/repositories/shopping_list_screen_repositories.dart';
+import 'package:meals/screens/shopping_list_screen/cubit/shopping_list_screen_cubit.dart';
+import 'package:meals/widgets/category_widget.dart';
 
 class ShoppingListScreen extends StatelessWidget {
   ShoppingListScreen({
