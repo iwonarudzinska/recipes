@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:meals/app/core/enums.dart';
 import 'package:meals/domain/models/category.dart';
 import 'package:meals/domain/models/meal.dart';
@@ -7,52 +6,42 @@ const dummycategories = [
   Category(
     id: 'c1',
     title: 'Vegetarian',
-    color: Colors.purple,
   ),
   Category(
     id: 'c2',
     title: 'Vegan',
-    color: Colors.red,
   ),
   Category(
     id: 'c3',
     title: 'Breakfast',
-    color: Colors.orange,
   ),
   Category(
     id: 'c4',
-    title: 'German',
-    color: Colors.amber,
+    title: 'Quick Meat Recipes',
   ),
   Category(
     id: 'c5',
-    title: 'Light & Lovely',
-    color: Colors.blue,
+    title: 'Italian',
   ),
   Category(
     id: 'c6',
-    title: 'Exotic',
-    color: Colors.green,
+    title: 'Seafood',
   ),
   Category(
     id: 'c7',
-    title: 'Brt',
-    color: Colors.lightBlue,
+    title: 'French',
   ),
   Category(
     id: 'c8',
-    title: 'Asian',
-    color: Colors.lightGreen,
+    title: 'Fish',
   ),
   Category(
     id: 'c9',
-    title: 'French',
-    color: Colors.pink,
+    title: 'Desserts',
   ),
   Category(
     id: 'c10',
-    title: 'Summer',
-    color: Colors.teal,
+    title: 'Cocktails',
   ),
 ];
 
@@ -336,30 +325,621 @@ final dummymeals = [
   Meal(
     id: 'm10',
     categories: [
-      'c5',
-      'c10',
+      'c4',
     ],
-    title: 'Asparagus Salad with Cherry Tomatoes',
+    title: 'Grilled Steak with Parsley-Parmesan Salad',
     affordability: Affordability.luxurious,
     complexity: Complexity.simple,
     imageUrl:
-        'https://cdn.pixabay.com/photo/2018/04/09/18/26/asparagus-3304997_1280.jpg',
+        'https://assets.bonappetit.com/photos/57ad4b5253e63daf11a4dda1/1:1/w_1920,c_limit/grilled-steak-with-parsley-parmesan-salad.jpg',
     duration: 30,
     ingredients: [
-      'White and Green Asparagus',
-      '30g Pine Nuts',
-      '300g Cherry Tomatoes',
-      'Salad',
-      'Salt, Pepper and Olive Oil'
+      '1½ pound flatiron steak',
+      '2 cups fresh flat-leaf parsley leaves',
+      '2 oz. Parmesan, shaved',
+      '3 tablespoons olive oil, divided, plus more for drizzling',
+      'Kosher salt and freshly ground black pepper',
+      '1 tablespoon fresh lemon juice'
     ],
     steps: [
-      'Wash, peel and cut the asparagus',
-      'Cook in salted water',
-      'Salt and pepper the asparagus',
-      'Roast the pine nuts',
-      'Halve the tomatoes',
-      'Mix with asparagus, salad and dressing',
-      'Serve with Baguette'
+      'Rub steak with 2 Tbsp. oil; season generously with salt and pepper. Let sit at room temperature 30 minutes.',
+      'Prepare a grill for medium-high heat; oil grill grate. Grill steak to desired doneness, 5–7 minutes per side for medium-rare. Let rest 5 minutes before slicing against the grain.',
+      'Meanwhile, toss parsley, Parmesan, lemon juice, and remaining 1 Tbsp. oil in a medium bowl; season with salt, pepper, and more lemon juice, if desired. Serve steak topped with parsley-Parmesan salad.'
+    ],
+  ),
+  Meal(
+    id: 'm11',
+    categories: [
+      'c4',
+    ],
+    title: 'Pork Tonkatsu with Watermelon-Tomato Salad',
+    affordability: Affordability.affordable,
+    complexity: Complexity.simple,
+    imageUrl:
+        'https://assets.bonappetit.com/photos/57afc6b4f1c801a1038bd466/master/w_1280,c_limit/pork-tonkatsu-with-watermelon-salad.jpg',
+    duration: 30,
+    ingredients: [
+      '2 cubes watermelo',
+      '2 cups cherry tomatoes, halved',
+      '2 cups (lightly packed) baby arugula',
+      '1 cup fresh flat-leaf parsley leaves',
+      '1 cup extra-virgin olive oil',
+      '2 tablespoons Dijon mustard, divided',
+      '1 tablespoon fresh lemon juice plus 4 lemon wedges',
+      '2 large eggs',
+      '2 cups panko (Japanese breadcrumbs)',
+      'Spices',
+      '4-ounce boneless center-cut pork chops, pounded to 1/8 thickness',
+      '6 tablespoons vegetable oil, divided'
+    ],
+    steps: [
+      'Combine first 4 ingredients in a large bowl. Whisk olive oil, 1 tablespoon mustard, and juice in a small bowl. Season dressing with salt and pepper. Set salad and dressing aside.',
+      'Whisk eggs and 1 tablespoon mustard in a medium bowl. Combine panko, 1/2 teaspoon salt, and 1/4 teaspoon pepper on a large plate. Season pork lightly with salt and pepper. Dip in egg mixture, then in panko, pressing to adhere.',
+      'Working in 2 batches, heat 2 tablespoons vegetable oil in a large nonstick skillet over medium heat and cook pork until golden brown and cooked through, about 2 minutes per side, adding 1 tablespoon vegetable oil after turning. Drain on paper towels.',
+      'Toss salad with dressing; season to taste with salt and pepper. Serve pork with salad and lemon wedges for squeezing over.'
+    ],
+  ),
+  Meal(
+    id: 'm12',
+    categories: [
+      'c4',
+    ],
+    title: 'Garlic Rosemary Pork Chops',
+    affordability: Affordability.affordable,
+    complexity: Complexity.simple,
+    imageUrl:
+        'https://hips.hearstapps.com/del.h-cdn.co/assets/18/11/1520972863-pork-chop-vertical.jpg?crop=1xw:1xh;center,top&resize=980:*',
+    duration: 30,
+    ingredients: [
+      '4 pork loin chops',
+      'kosher salt',
+      'Freshly ground black pepper',
+      '1 tbsp. freshly minced rosemary',
+      '2 cloves garlic, minced',
+      '1/2 c. (1 stick) butter, melted',
+      '1 tbsp. extra-virgin olive oil'
+    ],
+    steps: [
+      'Preheat oven to 375°. Season pork chops generously with salt and pepper.',
+      'In a small bowl mix together butter, rosemary, and garlic. Set aside.',
+      'In an oven safe skillet over medium-high heat, heat olive oil then add pork chops.',
+      'Sear until golden, 4 minutes, flip and cook 4 minutes more. Brush pork chops generously with garlic butter.',
+      'Place skillet in oven and cook until cooked through (145° for medium), 10-12 minutes. Serve with more garlic butter.'
+    ],
+  ),
+  Meal(
+    id: 'm13',
+    categories: [
+      'c5',
+    ],
+    title: 'Calzone',
+    affordability: Affordability.affordable,
+    complexity: Complexity.simple,
+    imageUrl:
+        'https://cdn.aniagotuje.com/pictures/articles/2020/01/1968027-v-1500x1500.jpg',
+    duration: 35,
+    ingredients: [
+      '1 pound pizza dough',
+      '½ cup pizza sauce',
+      '½ cup yellow onion diced',
+      '½ cup green bell pepper diced',
+      '½ cup sliced pepperoni',
+      '1 cup mozzarella cheese shredded',
+      '1 tablespoon olive oil'
+    ],
+    steps: [
+      'Preheat oven to 425°F and line a large sheet pan with parchment paper.',
+      'Divide pizza dough into 4 equal parts and roll each dough ball into a 1/4 inch thick circle.',
+      'On half of each dough circle, add equal parts sauce, yellow onion, green bell pepper, and sliced pepperoni. Make sure to leave a little room around the edges so you can crimp the calzone shut.',
+      'Sprinkle the toppings with equal parts shredded cheese. Then fold the other half of the dough over the toppings and crimp the edges.',
+      'Cut 2-3 air vents into the top of the calzone and place it on to the prepared baking sheet.',
+      'Brush with olive oil and bake for about 15 minutes or until the dough is fully cooked and the calzone is golden brown.',
+      'Serve with warmed pizza sauce for dipping.'
+    ],
+  ),
+  Meal(
+    id: 'm14',
+    categories: [
+      'c5',
+    ],
+    title: 'Neapolitan pizza',
+    affordability: Affordability.luxurious,
+    complexity: Complexity.challenging,
+    imageUrl:
+        'https://www.acouplecooks.com/wp-content/uploads/2018/09/Neapolitan-Pizza-0019.jpg',
+    duration: 45,
+    ingredients: [
+      '1 ball Best Homemade Pizza Dough',
+      '⅓ cup Easy Pizza Sauce',
+      '3 ounces fresh mozzarella cheese (or about ¾ cup shredded mozzarella)',
+      'Kosher salt',
+      '2 basil leaves',
+      'Semolina flour or cornmeal, for dusting the pizza peel'
+    ],
+    steps: [
+      'Place a pizza stone in the oven and preheat to 500°F. OR preheat your pizza oven (here’s the pizza oven we have!).',
+      'Make Pizza Sauce.',
+      'Slice the mozzarella into ¼ inch thick pieces. If it’s incredibly watery fresh mozzarella (all brands vary), you may want to let it sit on a paper towel to remove moisture for about 15 minutes then dab the mozzarella with the paper towel to remove any additional moisture.',
+      'When the oven is ready, stretch the dough into a circle; see How to Stretch Pizza Dough for instructions. Sprinkle a pizza peel with semolina flour or cornmeal, then carefully place the dough on top. Spread the pizza sauce across the dough. Top with mozzarella cheese.  Taste a bite of the mozzarella cheese; if it does not taste salty, add a few pinches of kosher salt to the pizza.',
+      'If you’re baking in a pizza oven, add the basil leaves. For baking in a standard oven, add the basil leaves after you bake (the leaves turn black in a standard oven)',
+      'Transfer the pizza to the pizza stone on the pizza peel, then bake until the cheese is melted, about 7 minutes in the oven (or 1 minute in the pizza oven). Slice into pieces and serve immediately'
+    ],
+  ),
+  Meal(
+    id: 'm15',
+    categories: [
+      'c5',
+    ],
+    title: 'Pasta alla Norma',
+    affordability: Affordability.pricey,
+    complexity: Complexity.challenging,
+    imageUrl:
+        'https://cookieandkate.com/images/2020/09/pasta-alla-norma-recipe-3-768x1152.jpg',
+    duration: 50,
+    ingredients: [
+      '1 batch Super Simple Marinara Sauce, or 2 cups (16 ounces) store-bought marinara',
+      '2 medium eggplants (about 2 ¼ pounds total) ',
+      '¼ cup + 1 teaspoon extra-virgin olive oil',
+      '¼ teaspoon fine salt, more to taste',
+      '8 ounces rigatoni, ziti or spaghetti',
+      '½ cup chopped fresh basil, plus a handful more small basil leaves or torn leaves for garnish ',
+      '½ to 1 teaspoon red pepper flakes, to taste (optional)',
+      '½ teaspoon dried oregano',
+      '¾ cup (1.5 ounces) finely grated ricotta salata and/or Parmesan cheese'
+    ],
+    steps: [
+      'If making your own marinara: Cook the sauce per instructions. If it’s done cooking before you’re ready to assemble, cover the pot and keep it warm over very low heat. If you’re using store-bought marinara, warm it in a pot over medium-low heat while you cook the pasta.',
+      'Meanwhile, preheat the oven to 425 degrees Fahrenheit with racks in the upper and lower thirds of the oven. Line two large, rimmed baking sheets with parchment paper for easy cleanup.  ',
+      'Use a vegetable peeler to shave off long alternating strips of eggplant peel. The eggplants will look striped like zebras when you’re done. Then slice the eggplants into ½-inch thick rounds, discarding the end pieces.',
+      'Place the eggplant on the lined baking sheets. Brush the rounds with olive oil on both sides. Sprinkle the eggplant with the salt and plenty of pepper. Roast until deeply golden and tender, about 35 to 45 minutes, flipping after 20 minutes. Set aside',
+      'Bring a large pot of salted water to boil and cook the pasta until al dente, according to package directions. Reserve some pasta cooking water before draining (about ½ cup should be plenty), then return the pasta to the pot.',
+      'When the eggplant is done and the marinara is finished cooking (or warmed through, if using store-bought), gently stir the roasted eggplant into the sauce. Add the remaining 1 teaspoon olive oil, fresh basil, red pepper flakes (skip if you don’t like spice, or load it up if you do). Crush the dried oregano between your fingers as you drop it in.',
+      'Add the pasta to the sauce with a couple tablespoons of the reserved pasta cooking water, and gently stir it in. Add about two-thirds of the cheese, reserving the rest for garnish. Season to taste with additional salt (I usually add ¼ teaspoon more) and black pepper. You can add a bit more of the reserved pasta cooking water to loosen up the sauce, if desired.',
+      'Divide the pasta between four bowls. Sprinkle the remaining cheese on top of the individual servings, followed by some extra fresh basil. For added richness, drizzle the servings lightly with olive oil. Enjoy! Leftover pasta will keep well in the refrigerator, covered, for 4 to 5 days.',
+    ],
+  ),
+  Meal(
+    id: 'm16',
+    categories: [
+      'c6',
+    ],
+    title: 'Pad Thai',
+    affordability: Affordability.luxurious,
+    complexity: Complexity.simple,
+    imageUrl:
+        'https://hips.hearstapps.com/del.h-cdn.co/assets/17/25/640x959/gallery-1498148188-delish-easy-pad-thai-vertical-1024.jpg?resize=768:*',
+    duration: 25,
+    ingredients: [
+      'Kosher salt',
+      '8 oz. wide rice noodles',
+      '2 tbsp. lime juice',
+      '2 tbsp. brown sugar',
+      '1 tbsp. fish sauce',
+      '1 tbsp. low-sodium soy sauce',
+      '1/4 tsp. cayenne pepper',
+      '2 tbsp. vegetable oil',
+      '1 bell pepper, thinly sliced',
+      '2 cloves garlic, minced',
+      '2 eggs, lightly whisked',
+      '1 lb. shrimp, peeled and deveined',
+      'Freshly ground black pepper',
+      '2 green onions, thinly sliced',
+      '1/4 c. roasted peanuts, chopped',
+    ],
+    steps: [
+      'In a large pot of salted boiling water, cook noodles until al dente. Drain.',
+      'In a small bowl, whisk together lime juice, brown sugar, fish sauce, soy sauce, and cayenne pepper. Set aside.',
+      'In a large nonstick pan over medium-high heat, heat oil. Add bell pepper and cook until tender, about 4 minutes. Stir in garlic and cook until fragrant, about 1 minute more. Add the shrimp and season with salt and pepper. Cook until pink, about 2 minutes per side.',
+      'Push the shrimp and vegetables to one side of the pan and pour in the egg. Scramble until just set then mix with the shrimp mixture. Add the cooked noodles and toss until combined. Pour in the lime juice mixture and toss until the noodles are coated.',
+      'Garnish with green onions and roasted peanuts before serving.',
+    ],
+  ),
+  Meal(
+    id: 'm17',
+    categories: [
+      'c6',
+    ],
+    title: 'Lemon Garlic Shrimp',
+    affordability: Affordability.pricey,
+    complexity: Complexity.simple,
+    imageUrl:
+        'https://hips.hearstapps.com/del.h-cdn.co/assets/17/38/1600x2399/gallery-1506010449-lemon-garlic-shrimp-delish-1.jpg?resize=980:*',
+    duration: 20,
+    ingredients: [
+      '2 tbsp. butter, divided',
+      '1 tbsp. extra-virgin olive oil',
+      '1 lb. medium shrimp, peeled and deveined',
+      '1 lemon, thinly sliced, plus juice of 1 lemon',
+      '3 cloves garlic, minced',
+      '1 tsp. crushed red pepper flakes',
+      'Kosher salt',
+      '2 tbsp. dry white wine (or water)',
+      'Freshly chopped parsley, for garnish'
+    ],
+    steps: [
+      'In a large skillet over medium heat, melt 1 tablespoon butter and olive oil',
+      'Add shrimp, lemon slices, garlic, and crushed red pepper flakes, and season with salt.',
+      'Cook, stirring occasionally, until shrimp is pink and opaque, about 3 minutes per side.',
+      'Remove from heat and stir in remaining butter, lemon juice, and white wine. ',
+      'Season with salt and garnish with parsley before serving.',
+    ],
+  ),
+  Meal(
+    id: 'm18',
+    categories: [
+      'c6',
+    ],
+    title: 'Baked Scallops',
+    affordability: Affordability.luxurious,
+    complexity: Complexity.challenging,
+    imageUrl:
+        'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/baked-scallops-1-1650053711.jpeg?crop=0.8333333333333334xw:1xh;center,top&resize=768:*&keepGifs=1',
+    duration: 45,
+    ingredients: [
+      '1 lb. scallops',
+      'Kosher salt',
+      'Freshly ground black pepper',
+      '4 tbsp. butter, melted',
+      '3 cloves garlic, minced',
+      'Juice of 1/2 a lemon',
+      '1/4 c. panko bread crumbs',
+      '1/4 c. freshly grated Parmesan',
+      '4 tsp. extra-virgin olive oil',
+      'Pinch red pepper flakes',
+      'Lemon wedges, for serving'
+    ],
+    steps: [
+      'Preheat oven to 425°. Pat scallops dry with paper towels and place in a small baking dish. Season with salt and pepper.',
+      'In a small bowl, combine melted butter, garlic, and lemon juice. Pour all over scallops.',
+      'In another small bowl, combine bread crumbs, Parmesan, oil, and red pepper flakes. Sprinkle mixture on top of each scallop.',
+      'Bake until tops are golden and scallops are translucent, 12 to 15 minutes.',
+      'Spoon butter over tops and serve with lemon wedges.'
+    ],
+  ),
+  Meal(
+    id: 'm19',
+    categories: [
+      'c7',
+    ],
+    title: 'French Onion Soup',
+    affordability: Affordability.pricey,
+    complexity: Complexity.challenging,
+    imageUrl:
+        'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-french-onion-soup-vertical-1-1538433745.jpg?crop=1xw:1xh;center,top&resize=980:*',
+    duration: 65,
+    ingredients: [
+      '4 tbsp.  butter',
+      '3 large yellow onions, thinly sliced into half moons',
+      '2 tbsp. all-purpose flour',
+      'Kosher salt',
+      'Freshly ground black pepper',
+      '1/2 c. white wine',
+      '2 c. low-sodium chicken stock',
+      '4 c. low-sodium beef stock',
+      '8 sprigs fresh thyme, plus more for serving',
+      '8 baguette slices',
+      '1 c. grated Gruyère'
+    ],
+    steps: [
+      'In a large pot over medium heat, melt butter. Add onions and cook, stirring occasionally, until deeply golden, about 25 minutes.',
+      ' Add flour and cook 1 minute. Season with salt and pepper. Add wine and let simmer until evaporated, 3 minutes. Add stocks and thyme and bring to a boil. Reduce heat and let simmer 15 minutes. Season with salt and pepper to taste and remove thyme. ',
+      'Preheat broiler to high. Ladle soups into heat safe ramekins and top each with 2 slices of bread and top with cheese. Broil until bubbling and golden, 1 to 2 minutes.',
+      'Top with thyme to serve. '
+    ],
+  ),
+  Meal(
+    id: 'm20',
+    categories: [
+      'c7',
+    ],
+    title: 'Beef Bourguignon',
+    affordability: Affordability.pricey,
+    complexity: Complexity.hard,
+    imageUrl:
+        'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-190828-beef-bourguignon-0154-portrait-pf-1568132096.jpg?crop=1xw:0.9994736842105263xh;center,top&resize=980:*',
+    duration: 140,
+    ingredients: [
+      '3 lb. beef chuck, cut into 1” cubes',
+      'Freshly ground black pepper',
+      '1/2 lb. bacon, cut into ½” pieces',
+      '2 large carrots, peeled, sliced on bias into large chunks',
+      '1 large onion, chopped',
+      '4 cloves garlic, minced',
+      '2 tsp. tomato paste',
+      '3 tbsp. all-purpose flour',
+      '3 c. dry red wine',
+      '2 c. low-sodium beef broth',
+      '1 bay leaf',
+      '3 sprigs thyme',
+      '4 tbsp. butter',
+      '1/2 lb. pearl onions',
+      '1/2 lb. cremini mushrooms, halved',
+      'Freshly chopped parsley, for garnish'
+    ],
+    steps: [
+      'Preheat oven to 350°. Season beef with salt and pepper. In a large Dutch oven (or ovenproof pot) over medium heat, heat oil. Add bacon and cook, stirring occasionally, until crispy, about 6 minutes. Drain bacon on a paper towel-lined plate.',
+      'Increase heat to medium-high and, working in batches, add beef in a single layer, leaving room between each piece. Cook until seared on all sides, about 10 minutes. Repeat with remaining beef. ',
+      'Reduce heat to medium and stir in carrot and onion. If the pan seems very dark, add 1 tablespoon of water and use a wooden spoon to scrape dark. Season with salt and cook until softened, about 5 minutes. Stir in garlic and tomato paste and cook until fragrant, about 30 seconds.',
+      'Add flour and stir until vegetables are coated, then add wine, broth, bay leaves, and thyme. Return bacon and beef to pot, cover pot with a tight-fitting lid, and transfer to oven. Cook until beef is very tender and sauce has thickened slightly, about 1½ hours. Season with salt and pepper.',
+      'Meanwhile, cook pearl onions and mushrooms. In a large skillet over medium heat, melt butter. Add pearl onions and mushrooms and cook, stirring occasionally, until golden and tender. If the pan seems dry, add water by the tablespoon.',
+      'Top each serving with pearl onions and mushrooms and garnish with parsley.'
+    ],
+  ),
+  Meal(
+    id: 'm21',
+    categories: [
+      'c7',
+    ],
+    title: 'Gougères (Cheese Puffs)',
+    affordability: Affordability.luxurious,
+    complexity: Complexity.simple,
+    imageUrl:
+        'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-cheese-puffs-093021-02-jg-1634050088.jpg?crop=0.836xw:1.00xh;0.164xw,0&resize=980:*',
+    duration: 60,
+    ingredients: [
+      '1/2 c. water',
+      '4 tbsp. butter',
+      '1/2 tsp. Kosher salt',
+      '1/2 tsp. granulated sugar',
+      '1 tsp. freshly ground white pepper (optional)',
+      '1/2 c. all-purpose flour',
+      '2 large eggs',
+      '1/2 c. freshly grated Gruyère, plus more for topping'
+    ],
+    steps: [
+      'Preheat oven to 400° and line a baking sheet with parchment paper.',
+      'In a medium saucepan, combine water, butter, salt, sugar, and white pepper if using, and bring to a boil. Add the flour all at once and stir with a wooden spoon until a smooth dough forms. Continue to cook until dough pulls away from the pan and forms a ball, and a film develops on the bottom of the pot, about 2 minutes.',
+      'Transfer dough to a bowl and continue to mix with a wooden spoon to cool slightly, 1 minute. Beat in eggs, one at a time, mixing until smooth and fully incorporated after each addition. Fold in gruyere.',
+      'Transfer batter to a piping bag or use a small (2 teaspoon capacity) cookie scoop to create small, inch-wide mounds on prepared baking sheet, about an inch apart. Top with more gruyere and bake until puffed and golden, 20 to 25 minutes.'
+    ],
+  ),
+  Meal(
+    id: 'm22',
+    categories: [
+      'c8',
+    ],
+    title: 'Capers and Halibut',
+    affordability: Affordability.affordable,
+    complexity: Complexity.simple,
+    imageUrl: 'https://recipesdetails.com/thumb/capers-and-halibut.jpg',
+    duration: 30,
+    ingredients: [
+      '1 tablespoon olive oil',
+      '2 (8 ounce) steaks halibut',
+      '½ cup white wine',
+      '1 teaspoon chopped garlic',
+      '¼ cup butter',
+      'salt and pepper to taste',
+      '3 tablespoons capers, with liquid'
+    ],
+    steps: [
+      'Heat the olive oil in a large skillet over medium-high heat. Fry the halibut steaks on all sides until nicely browned. Remove from pan, and set aside.',
+      'Pour the wine into the pan, and use a spatula to scrape any browned bits from the bottom. Let the wine reduce to almost nothing, then stir in the garlic, butter and capers. Season with salt and pepper to taste. Let the sauce simmer for a minute to blend the flavors.',
+      'Return the steaks to the pan, and coat them with sauce. Cook until fish flakes easily with a fork. Serve fish immediately with the sauce from the pan poured over it.'
+    ],
+  ),
+  Meal(
+    id: 'm23',
+    categories: [
+      'c8',
+    ],
+    title: "Hudson's Baked Tilapia with Dill Sauce",
+    affordability: Affordability.luxurious,
+    complexity: Complexity.simple,
+    imageUrl:
+        'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2022%2F07%2F19%2F74169-Hudsons-Baked-Tilapia-with-Dill-Sauce-LatinaCook_5202473_original-1x1-1.jpg',
+    duration: 30,
+    ingredients: [
+      '4 (4 ounce) fillets tilapia',
+      'salt and pepper to taste',
+      '1 tablespoon Cajun seasoning, or to taste',
+      '1 lemon, thinly sliced',
+      '¼ cup mayonnaise',
+      '½ cup sour cream',
+      '⅛ teaspoon garlic powder',
+      '1 teaspoon fresh lemon juice',
+      '2 tablespoons chopped fresh dill'
+    ],
+    steps: [
+      'Preheat the oven to 350 degrees F (175 degrees C). Lightly grease a 9x13 inch baking dish.',
+      'Season the tilapia fillets with salt, pepper and Cajun seasoning on both sides. Arrange the seasoned fillets in a single layer in the baking dish. Place a layer of lemon slices over the fish fillets. I usually use about 2 slices on each piece so that it covers most of the surface of the fish.',
+      'Bake uncovered for 15 to 20 minutes in the preheated oven, or until fish flakes easily with a fork.',
+      'While the fish is baking, mix together the mayonnaise, sour cream, garlic powder, lemon juice and dill in a small bowl. Serve with tilapia.'
+    ],
+  ),
+  Meal(
+    id: 'm24',
+    categories: [
+      'c8',
+    ],
+    title: 'Blackened Tuna',
+    affordability: Affordability.affordable,
+    complexity: Complexity.simple,
+    imageUrl:
+        'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F630224.jpg&w=272&h=272&c=sc&poi=face&q=60',
+    duration: 20,
+    ingredients: [
+      '1½ pounds fresh tuna steaks, 1 inch thick',
+      '2 tablespoons Cajun seasoning',
+      '2 tablespoons olive oil',
+      '2 tablespoons butter'
+    ],
+    steps: [
+      'Generously coat tuna with Cajun seasoning.',
+      'Heat oil and butter in a large skillet over high heat.',
+      'When oil is nearly smoking, place steaks in pan. Cook on one side for 3 to 4 minutes, or until blackened. Turn steaks, and cook for 3 to 4 minutes, or to desired doneness.'
+    ],
+  ),
+  Meal(
+    id: 'm25',
+    categories: [
+      'c9',
+    ],
+    title: 'Oreo Cheesecake Bars',
+    affordability: Affordability.luxurious,
+    complexity: Complexity.hard,
+    imageUrl:
+        'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-slutty-cheesecake-bars-vertical-1548356501.jpg?crop=1xw:1xh;center,top&resize=980:*',
+    duration: 200,
+    ingredients: [
+      '1 (16.5-oz.) log refrigerated chocolate chip cookie dough (such as Pillsbury)',
+      '20 Oreo cookies, plus more for topping',
+      '2 (8-oz.) blocks cream cheese, softened',
+      '1/2 c. granulated sugar',
+      '2 large eggs',
+      '1/2 tsp. pure vanilla extract',
+      'Pinch of kosher salt',
+      'Warm caramel, for drizzling'
+    ],
+    steps: [
+      'Preheat oven to 325°. Line an 8"-x-8" baking dish with parchment paper with a 2" overhang. Press cookie dough into bottom of baking dish.',
+      'Top with a single layer of Oreos, breaking them up to fit, if necessary, and set aside.',
+      'Make cheesecake layer: In a medium bowl using a handheld mixer or stand mixer with the paddle attachment, beat cream cheese until smooth. Beat in sugar, eggs, vanilla, and salt until fully combined. Pour over Oreo layer and smooth top.',
+      'Top with broken Oreo pieces and bake until the center is only slightly jiggly, 30 to 35 minutes.',
+      'Refrigerate until completely chilled, at least 3 hours and up to overnight.',
+      'Remove cheesecake bar from baking dish and slice.',
+      'Drizzle with warm caramel before serving.'
+    ],
+  ),
+  Meal(
+    id: 'm26',
+    categories: [
+      'c9',
+    ],
+    title: 'Chocolate Pudding',
+    affordability: Affordability.affordable,
+    complexity: Complexity.simple,
+    imageUrl:
+        'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/20190628-delish-chocolate-pudding-ehg-290-vertical-1562792025.png?crop=0.9997369113391213xw:1xh;center,top&resize=980:*',
+    duration: 180,
+    ingredients: [
+      '1/2 c. granulated sugar',
+      '1/4 c. unsweetened cocoa powder',
+      '2 tbsp. cornstarch',
+      '1/2 tsp. kosher salt',
+      '2 1/2 c. milk',
+      '3 large egg yolks',
+      '3 oz. chopped bittersweet chocolate',
+      '2 tbsp. butter',
+      '1 tsp. pure vanilla extract',
+      'Whipped cream, for serving',
+      'Chocolate shavings, for serving'
+    ],
+    steps: [
+      'In a medium saucepan, combine sugar, cocoa powder, cornstarch, and salt. Slowly pour in milk, whisking to combine. Place saucepan over medium heat and whisk until mixture comes to a boil, 6 minutes. ',
+      'Place egg yolks in a medium heat proof bowl and beat until light and frothy. Slowly pour in about 1/2 cup hot cocoa mixture, whisking to combine. Slowly pour egg mixture back into sauce pan, whisking constantly. ',
+      'Return to medium heat, whisking, until thickened to a pudding-like consistency, about 3 minutes.',
+      'Take off heat and whisk in chocolate, butter, and vanilla until smooth. If mixture looks lumpy at all, strain it through a fine mesh strainer.',
+      'Pour into a large bowl and place plastic wrap directly on surface of pudding. Refrigerate until chilled, 2 hours. ',
+      'When ready to serve, spoon into individual bowls or ramekins and top with whipped cream and chocolate shavings.'
+    ],
+  ),
+  Meal(
+    id: 'm27',
+    categories: [
+      'c9',
+    ],
+    title: 'Cookie Dough Ice Cream Sandwiches',
+    affordability: Affordability.luxurious,
+    complexity: Complexity.challenging,
+    imageUrl:
+        'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-cookie-dough-ice-cream-sandwiches-1523559186.png?crop=1xw:1xh;center,top&resize=980:*',
+    duration: 300,
+    ingredients: [
+      '1 c. (2 sticks) melted butter',
+      '1 c. packed brown sugar',
+      '3/4 c. sugar',
+      '1/4 c. milk (preferably whole or 2%)',
+      '1 tsp. pure vanilla extract',
+      '1 1/2 c. mini chocolate chips',
+      '3 qt. vanilla ice cream, softened',
+      '1 tsp. kosher salt',
+      '2 1/2 c. all-purpose flour'
+    ],
+    steps: [
+      'Line a large baking sheet with parchment paper, leaving overhang on sides. In a large bowl, stir together melted butter, both sugars, milk, and vanilla until combined. Stir in flour and salt, then fold in chocolate chips. ',
+      'Press cookie dough into prepared baking sheet, evening it out as much as possible (a cutting board can help). Top with a second piece of parchment and freeze until firm, 1 hour. ',
+      'Remove cookie dough from pan and place on a cutting board. Slice dough down the center. Scoop ice cream on one half, then gently place other half of cookie dough on top. Transfer back to pan and freeze at least 4 hours and up to overnight.',
+      'Slice into sandwiches and serve.'
+    ],
+  ),
+  Meal(
+    id: 'm28',
+    categories: [
+      'c10',
+    ],
+    title: 'Pineapple Sunrise Mimosas',
+    affordability: Affordability.affordable,
+    complexity: Complexity.simple,
+    imageUrl:
+        'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4579246.jpg&w=272&h=272&c=sc&poi=face&q=60',
+    duration: 10,
+    ingredients: [
+      '4½ cups pineapple juice',
+      '1⅛ cups orange juice',
+      '⅓ cup lime juice',
+      '¼ fresh pineapple, sliced',
+      '½ blood orange, sliced',
+      '½ lime, sliced',
+      '1 (750 milliliter) bottle Prosecco (Italian sparkling wine)',
+      '¼ cup Campari',
+      '4 slices pineapple and orange slices, for garnish'
+    ],
+    steps: [
+      'Stir pineapple juice, orange juice, and lime juice together in a large pitcher or punch bowl. Add pineapple, blood orange, and lime slices. Cover; refrigerate 2 to 24 hours.',
+      'To serve, pour 1/2 cup juice mixture into each glass or champagne flute. Add 1/4 cup Prosecco per serving.',
+      'Slowly drizzle in 1 teaspoon Campari. Garnish with a fresh pineapple or orange slice, if desired.'
+    ],
+  ),
+  Meal(
+    id: 'm29',
+    categories: [
+      'c10',
+    ],
+    title: 'The Real Mojito',
+    affordability: Affordability.luxurious,
+    complexity: Complexity.simple,
+    imageUrl:
+        'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F679757.jpg&w=272&h=272&c=sc&poi=face&q=60',
+    duration: 10,
+    ingredients: [
+      '10 fresh mint leaves',
+      '½ medium lime, cut into 3 wedges, divided',
+      '2 tablespoons white sugar, or to taste',
+      '1 cup ice cubes, or as needed',
+      '1½ fluid ounces white rum',
+      '½ cup club soda, or as needed'
+    ],
+    steps: [
+      'Place mint leaves and 1 lime wedge into a sturdy glass. Use a muddler and crush to release mint oils and lime juice.',
+      'Add remaining lime wedges and 2 tablespoons sugar, and muddle again to release the lime juice. Do not strain the mixture.',
+      'Fill the glass almost to the top with ice. Pour in rum and fill the glass with club soda.',
+      'Stir, taste, and add more sugar if desired.'
+    ],
+  ),
+  Meal(
+    id: 'm30',
+    categories: [
+      'c10',
+    ],
+    title: 'Mai Tai',
+    affordability: Affordability.pricey,
+    complexity: Complexity.simple,
+    imageUrl:
+        'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2022%2F05%2F24%2F2221437-mai-tai-Snacking-in-the-Kitchen-1x1-1.jpg&w=272&h=272&c=sc&poi=%5B522%2C558%5D&q=60',
+    duration: 10,
+    ingredients: [
+      '1 cup ice cubes',
+      '3 fluid ounces pineapple juice',
+      '2 fluid ounces orange juice',
+      '1 (1.5 fluid ounce) jigger spiced rum',
+      '½ (1.5 fluid ounce) jigger coconut-flavored rum',
+      '1 teaspoon grenadine syrup'
+    ],
+    steps: [
+      '1 teaspoon grenadine syrup',
+      'Add pineapple juice, orange juice, spiced rum, coconut rum, and grenadine. ',
+      'Shake vigorously and strain into a glass full of ice.'
     ],
   ),
 ];

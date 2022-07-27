@@ -20,6 +20,7 @@ class ShoppingListScreenCubit extends Cubit<ShoppingListScreenState> {
         );
 
   final ShoppingListScreenRepositories shoppingListScreenRepositories;
+  
   StreamSubscription? _streamSubscription;
 
   Future<void> start() async {
