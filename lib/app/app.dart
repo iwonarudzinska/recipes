@@ -39,11 +39,11 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Meals',
+      title: 'A Matter Of Taste',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.teal)
-            .copyWith(secondary: const Color.fromARGB(255, 46, 54, 122)),
-        canvasColor: const Color.fromARGB(255, 132, 188, 177),
+        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.lime)
+            .copyWith(secondary: Colors.teal),
+        canvasColor: Colors.teal,
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
               bodyText1: const TextStyle(

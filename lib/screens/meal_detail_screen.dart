@@ -60,7 +60,7 @@ class MealDetailScreen extends StatelessWidget {
             buildContainer(
               ListView.builder(
                 itemBuilder: (ctx, index) => Card(
-                  color: Theme.of(context).colorScheme.secondary,
+                  color: Theme.of(context).colorScheme.primary,
                   child: Padding(
                     padding: const EdgeInsets.symmetric(
                       vertical: 5,
@@ -68,9 +68,6 @@ class MealDetailScreen extends StatelessWidget {
                     ),
                     child: Text(
                       selectedMeal.ingredients[index],
-                      style: const TextStyle(
-                        color: Colors.white,
-                      ),
                     ),
                   ),
                 ),
@@ -84,6 +81,7 @@ class MealDetailScreen extends StatelessWidget {
                   children: [
                     ListTile(
                       leading: CircleAvatar(
+                        backgroundColor: Colors.lime,
                         child: Text('#${(index + 1)}'),
                       ),
                       title: Text(
@@ -100,6 +98,7 @@ class MealDetailScreen extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.amber,
         child: Icon(
           isFavorite(mealId) ? Icons.star : Icons.star_border,
         ),

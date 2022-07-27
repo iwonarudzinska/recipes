@@ -21,8 +21,6 @@ class CategoryItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () => selectCateory(context),
-      // splashColor: Theme.of(context).primaryColor,
-      // borderRadius: BorderRadius.circular(15),
       child: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
@@ -34,7 +32,6 @@ class CategoryItem extends StatelessWidget {
             Radius.circular(20),
           ),
         ),
-        // color: const Color.fromARGB(255, 118, 148, 182),
         padding: const EdgeInsets.all(15),
         child: Text(
           title,

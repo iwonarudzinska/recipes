@@ -30,34 +30,37 @@ class MainDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Drawer(
-      child: Column(
-        children: [
-          Container(
-            height: 120,
-            width: double.infinity,
-            padding: const EdgeInsets.all(20),
-            alignment: Alignment.centerLeft,
-            color: Theme.of(context).colorScheme.primary,
-            child: Text(
-              'MENU 🍽️',
-              style: TextStyle(
-                fontWeight: FontWeight.w900,
-                fontSize: 30,
-                color: Theme.of(context).colorScheme.secondary,
+    return SafeArea(
+      child: Drawer(
+        child: Column(
+          children: [
+            Container(
+              height: 120,
+              width: double.infinity,
+              padding: const EdgeInsets.all(20),
+              alignment: Alignment.centerLeft,
+              color: Theme.of(context).colorScheme.primary,
+              child: Text(
+                'MENU 🍽️',
+                style: TextStyle(
+                  fontWeight: FontWeight.w900,
+                  fontSize: 30,
+                  color: Theme.of(context).colorScheme.secondary,
+                ),
               ),
             ),
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          buildListTile('Shopping list', Icons.shopping_cart, () {
-            Navigator.of(context).push(
-              MaterialPageRoute(
-                  builder: (_) => ShoppingListScreen(), fullscreenDialog: true),
-            );
-          }),
-        ],
+            const SizedBox(
+              height: 20,
+            ),
+            buildListTile('Shopping list', Icons.shopping_cart, () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                    builder: (_) => ShoppingListScreen(),
+                    fullscreenDialog: true),
+              );
+            }),
+          ],
+        ),
       ),
     );
   }

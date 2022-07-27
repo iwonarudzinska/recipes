@@ -13,7 +13,8 @@ class FavoritesScreen extends StatelessWidget {
       return const Center(
         child: Text('You have no favorites meals yet - start adding some!',
             style: TextStyle(
-              fontSize: 20,
+              fontSize: 23,
+              fontWeight: FontWeight.bold,
             )),
       );
     } else {
