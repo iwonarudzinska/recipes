@@ -100,7 +100,7 @@ final dummymeals = [
       'Spices (sea salt, black pepper)'
     ],
     steps: [
-      'Preheat the oven to 200°C/400°F/gas 6.',
+      'Preheat the oven to 200°C/400°F.',
       'Wash and scrub 4 large potatoes, dry well (this will ensure crispy skin once baked), then rub with 1 tablespoon of olive oil and season with sea salt.',
       'Using a fork, prick each potato a few times, then place directly on the shelves of the oven and bake for 1 hour (longer if your potatoes are particularly big), or until crispy on the outside and soft in the middle.',
       'Meanwhile, deseed 1 red pepper and trim 1 bunch of spring onions, then finely chop. Trim the tough end from 1 head of broccoli (375g), finely chop the stalk and slice the head apart into bite-sized florets.',
@@ -124,7 +124,7 @@ final dummymeals = [
     duration: 20,
     ingredients: [
       '80 g wild rocket',
-      '1/2 a clove of garlic',
+      '½ a clove of garlic',
       '50 g shelled unsalted pistachios',
       'olive oil',
       '25 g Parmesan cheese , plus extra to serve',
@@ -153,13 +153,13 @@ final dummymeals = [
     duration: 20,
     ingredients: [
       '1 tsp. honey or agave if vegan',
-      '1 1/2 tbsp. fresh Meyer lemon juice',
+      '1 ½ tbsp. fresh Meyer lemon juice',
       'Kosher salt',
       '1 tsp. Dijon mustard',
       '2 tbsp. olive oil',
       '1 small shallot, finely chopped',
-      '1 lb. mixed colored radishes, trimmed',
-      '1/4 c. small fresh mint leaves (or large ones, torn)'
+      '1 mixed colored radishes, trimmed',
+      'small fresh mint leaves (or large ones, torn)'
     ],
     steps: [
       'In small bowl, whisk together lemon juice, honey, and 1/2 teaspoon salt to dissolve.',
@@ -180,16 +180,16 @@ final dummymeals = [
         'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/tofu-1650643684.jpg?crop=0.485xw:0.486xh;0.240xw,0.285xh&resize=980:*',
     duration: 25,
     ingredients: [
-      '1 c. rice',
-      '12 oz. extra-firm silken tofu',
+      '1 rice',
+      '12 tofu',
       '4 tbsp. oil, divided',
       '1 tsp. Chinese five-spice powder',
       'Kosher salt',
       '1 small English cucumber (thinly sliced)',
-      '1 1/2 tbsp. rice vinegar',
-      '1/4 c. reduced-sodium soy sauce',
-      '8 oz. shiitake mushrooms (stemmed and cut into 1/4-inch pieces)',
-      '1/4 c. reduced-sodium soy sauce',
+      '1 /½ tbsp. rice vinegar',
+      '½ reduced-sodium soy sauce',
+      '8 shiitake mushrooms (stemmed and cut into ½-inch pieces)',
+      '½ reduced-sodium soy sauce',
       '1 tbsp. dark brown sugar',
       '2 tsp. chili garlic sauce',
       'Sliced scallions, sesame seeds, and cilantro, for serving'
@@ -215,14 +215,14 @@ final dummymeals = [
         'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/heirloom-tomato-salad-ghk-1529601092.jpg?crop=0.9993197278911565xw:1xh;center,top&resize=980:*',
     duration: 15,
     ingredients: [
-      '1/4 c. olive oil',
+      'olive oil',
       '2 tbsp. Champagne vinegar',
       '1 tsp. honey or agave',
       'Kosher salt',
-      '1 pt. mixed-color cherry or grape tomatoes, halved',
+      '1 mixed-color cherry or grape tomatoes, halved',
       'Pepper',
       '2 tbsp. finely chopped chives, plus more for serving',
-      '1 lb. heirloom tomatoes, some sliced and some cut into wedges',
+      '1 heirloom tomatoes, some sliced and some cut into wedges',
       'Small basil leaves, for serving'
     ],
     steps: [
@@ -245,11 +245,11 @@ final dummymeals = [
         'https://cdn.pixabay.com/photo/2018/07/10/21/23/pancake-3529653_1280.jpg',
     duration: 20,
     ingredients: [
-      '1 1/2 Cups all-purpose Flour',
-      '3 1/2 Teaspoons Baking Powder',
+      '1 ½ Cups all-purpose Flour',
+      '3 ½ Teaspoons Baking Powder',
       '1 Teaspoon Salt',
       '1 Tablespoon White Sugar',
-      '1 1/4 cups Milk',
+      '1 ½ cups Milk',
       '1 Egg',
       '3 Tablespoons Butter, melted',
     ],
@@ -273,15 +273,15 @@ final dummymeals = [
     duration: 35,
     ingredients: [
       '1 medium red onion, cut into 1/4-inch-thick wedges',
-      '1 large sweet potato (about 12 oz.), peeled and cut into 3/4-inch chunks',
-      '1 yellow potato (about 8 oz.), cut into 3/4-inch chunks',
+      '1 large sweet potato, peeled and cut into 3/4-inch chunks',
+      '1 yellow potato, cut into 3/4-inch chunks',
       '1 poblano pepper, cut into thin 1-inch pieces',
       '4 large cloves garlic, smashed',
       '2 tbsp. olive oil ',
       'Kosher salt and pepper',
       '6 oz. fresh chorizo, casings removed',
       '4 large eggs',
-      '2 oz. extra-sharp Cheddar, coarsely grated',
+      '2 extra-sharp Cheddar, coarsely grated',
       'Warm tortillas, for serving'
     ],
     steps: [
@@ -307,12 +307,12 @@ final dummymeals = [
     ingredients: [
       '4 tsp. olive oil, divided',
       '2 thin slices red onion',
-      '12 oz. sweet Italian sausage (casings removed)',
-      '2 oz. extra-sharp Cheddar cheese, coarsely grated',
+      '12 sweet Italian sausage (casings removed)',
+      '2 extra-sharp Cheddar cheese, coarsely grated',
       '4 large eggs',
       '4 English muffins, split and toasted',
       '6 sweet piquante peppers, sliced (we used Peppadews)',
-      '1/4 c. flat-leaf parsley',
+      '½  flat-leaf parsley',
     ],
     steps: [
       'Heat 2 tsp oil in large cast-iron skillet on medium. Add onion and cook 3 minutes.',
@@ -334,7 +334,7 @@ final dummymeals = [
         'https://assets.bonappetit.com/photos/57ad4b5253e63daf11a4dda1/1:1/w_1920,c_limit/grilled-steak-with-parsley-parmesan-salad.jpg',
     duration: 30,
     ingredients: [
-      '1½ pound flatiron steak',
+      '1 ½ pound flatiron steak',
       '2 cups fresh flat-leaf parsley leaves',
       '2 oz. Parmesan, shaved',
       '3 tablespoons olive oil, divided, plus more for drizzling',
@@ -392,11 +392,11 @@ final dummymeals = [
     duration: 30,
     ingredients: [
       '4 pork loin chops',
-      'kosher salt',
+      'Kosher salt',
       'Freshly ground black pepper',
       '1 tbsp. freshly minced rosemary',
       '2 cloves garlic, minced',
-      '1/2 c. (1 stick) butter, melted',
+      '(1 stick) butter, melted',
       '1 tbsp. extra-virgin olive oil'
     ],
     steps: [
@@ -477,15 +477,15 @@ final dummymeals = [
         'https://cookieandkate.com/images/2020/09/pasta-alla-norma-recipe-3-768x1152.jpg',
     duration: 50,
     ingredients: [
-      '1 batch Super Simple Marinara Sauce, or 2 cups (16 ounces) store-bought marinara',
-      '2 medium eggplants (about 2 ¼ pounds total) ',
+      '1 batch Super Simple Marinara Sauce, or 2 cups store-bought marinara',
+      '2 medium eggplants ',
       '¼ cup + 1 teaspoon extra-virgin olive oil',
       '¼ teaspoon fine salt, more to taste',
       '8 ounces rigatoni, ziti or spaghetti',
       '½ cup chopped fresh basil, plus a handful more small basil leaves or torn leaves for garnish ',
       '½ to 1 teaspoon red pepper flakes, to taste (optional)',
       '½ teaspoon dried oregano',
-      '¾ cup (1.5 ounces) finely grated ricotta salata and/or Parmesan cheese'
+      '¾ cup finely grated ricotta salata and/or Parmesan cheese'
     ],
     steps: [
       'If making your own marinara: Cook the sauce per instructions. If it’s done cooking before you’re ready to assemble, cover the pot and keep it warm over very low heat. If you’re using store-bought marinara, warm it in a pot over medium-low heat while you cook the pasta.',
@@ -511,20 +511,20 @@ final dummymeals = [
     duration: 25,
     ingredients: [
       'Kosher salt',
-      '8 oz. wide rice noodles',
+      '8 wide rice noodles',
       '2 tbsp. lime juice',
       '2 tbsp. brown sugar',
       '1 tbsp. fish sauce',
       '1 tbsp. low-sodium soy sauce',
-      '1/4 tsp. cayenne pepper',
+      '¼ tsp. cayenne pepper',
       '2 tbsp. vegetable oil',
       '1 bell pepper, thinly sliced',
       '2 cloves garlic, minced',
       '2 eggs, lightly whisked',
-      '1 lb. shrimp, peeled and deveined',
+      '1 shrimp, peeled and deveined',
       'Freshly ground black pepper',
       '2 green onions, thinly sliced',
-      '1/4 c. roasted peanuts, chopped',
+      '¼ roasted peanuts, chopped',
     ],
     steps: [
       'In a large pot of salted boiling water, cook noodles until al dente. Drain.',
@@ -576,14 +576,14 @@ final dummymeals = [
         'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/baked-scallops-1-1650053711.jpeg?crop=0.8333333333333334xw:1xh;center,top&resize=768:*&keepGifs=1',
     duration: 45,
     ingredients: [
-      '1 lb. scallops',
+      '1 scallops',
       'Kosher salt',
       'Freshly ground black pepper',
       '4 tbsp. butter, melted',
       '3 cloves garlic, minced',
-      'Juice of 1/2 a lemon',
-      '1/4 c. panko bread crumbs',
-      '1/4 c. freshly grated Parmesan',
+      'Juice of ½ a lemon',
+      '¼ panko bread crumbs',
+      '¼ freshly grated Parmesan',
       '4 tsp. extra-virgin olive oil',
       'Pinch red pepper flakes',
       'Lemon wedges, for serving'
@@ -608,21 +608,21 @@ final dummymeals = [
         'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-french-onion-soup-vertical-1-1538433745.jpg?crop=1xw:1xh;center,top&resize=980:*',
     duration: 65,
     ingredients: [
-      '4 tbsp.  butter',
+      '4 tbsp. butter',
       '3 large yellow onions, thinly sliced into half moons',
       '2 tbsp. all-purpose flour',
       'Kosher salt',
       'Freshly ground black pepper',
-      '1/2 c. white wine',
-      '2 c. low-sodium chicken stock',
-      '4 c. low-sodium beef stock',
+      '½ white wine',
+      '2 low-sodium chicken stock',
+      '4 low-sodium beef stock',
       '8 sprigs fresh thyme, plus more for serving',
       '8 baguette slices',
-      '1 c. grated Gruyère'
+      '1 grated Gruyère'
     ],
     steps: [
       'In a large pot over medium heat, melt butter. Add onions and cook, stirring occasionally, until deeply golden, about 25 minutes.',
-      ' Add flour and cook 1 minute. Season with salt and pepper. Add wine and let simmer until evaporated, 3 minutes. Add stocks and thyme and bring to a boil. Reduce heat and let simmer 15 minutes. Season with salt and pepper to taste and remove thyme. ',
+      'Add flour and cook 1 minute. Season with salt and pepper. Add wine and let simmer until evaporated, 3 minutes. Add stocks and thyme and bring to a boil. Reduce heat and let simmer 15 minutes. Season with salt and pepper to taste and remove thyme. ',
       'Preheat broiler to high. Ladle soups into heat safe ramekins and top each with 2 slices of bread and top with cheese. Broil until bubbling and golden, 1 to 2 minutes.',
       'Top with thyme to serve. '
     ],
@@ -639,21 +639,21 @@ final dummymeals = [
         'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-190828-beef-bourguignon-0154-portrait-pf-1568132096.jpg?crop=1xw:0.9994736842105263xh;center,top&resize=980:*',
     duration: 140,
     ingredients: [
-      '3 lb. beef chuck, cut into 1” cubes',
+      '3 beef chuck, cut into 1” cubes',
       'Freshly ground black pepper',
-      '1/2 lb. bacon, cut into ½” pieces',
+      '½ bacon, cut into ½” pieces',
       '2 large carrots, peeled, sliced on bias into large chunks',
       '1 large onion, chopped',
       '4 cloves garlic, minced',
       '2 tsp. tomato paste',
       '3 tbsp. all-purpose flour',
-      '3 c. dry red wine',
-      '2 c. low-sodium beef broth',
+      '3 dry red wine',
+      '2 low-sodium beef broth',
       '1 bay leaf',
       '3 sprigs thyme',
       '4 tbsp. butter',
-      '1/2 lb. pearl onions',
-      '1/2 lb. cremini mushrooms, halved',
+      '½ pearl onions',
+      '½ cremini mushrooms, halved',
       'Freshly chopped parsley, for garnish'
     ],
     steps: [
@@ -677,14 +677,14 @@ final dummymeals = [
         'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-cheese-puffs-093021-02-jg-1634050088.jpg?crop=0.836xw:1.00xh;0.164xw,0&resize=980:*',
     duration: 60,
     ingredients: [
-      '1/2 c. water',
+      'water',
       '4 tbsp. butter',
-      '1/2 tsp. Kosher salt',
-      '1/2 tsp. granulated sugar',
+      '½ tsp. Kosher salt',
+      '½ tsp. granulated sugar',
       '1 tsp. freshly ground white pepper (optional)',
-      '1/2 c. all-purpose flour',
+      '½ all-purpose flour',
       '2 large eggs',
-      '1/2 c. freshly grated Gruyère, plus more for topping'
+      '½ freshly grated Gruyère, plus more for topping'
     ],
     steps: [
       'Preheat oven to 400° and line a baking sheet with parchment paper.',
@@ -705,7 +705,7 @@ final dummymeals = [
     duration: 30,
     ingredients: [
       '1 tablespoon olive oil',
-      '2 (8 ounce) steaks halibut',
+      '2 steaks halibut',
       '½ cup white wine',
       '1 teaspoon chopped garlic',
       '¼ cup butter',
@@ -730,7 +730,7 @@ final dummymeals = [
         'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2022%2F07%2F19%2F74169-Hudsons-Baked-Tilapia-with-Dill-Sauce-LatinaCook_5202473_original-1x1-1.jpg',
     duration: 30,
     ingredients: [
-      '4 (4 ounce) fillets tilapia',
+      '4 fillets tilapia',
       'salt and pepper to taste',
       '1 tablespoon Cajun seasoning, or to taste',
       '1 lemon, thinly sliced',
@@ -782,12 +782,12 @@ final dummymeals = [
         'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-slutty-cheesecake-bars-vertical-1548356501.jpg?crop=1xw:1xh;center,top&resize=980:*',
     duration: 200,
     ingredients: [
-      '1 (16.5-oz.) log refrigerated chocolate chip cookie dough (such as Pillsbury)',
+      '1 log refrigerated chocolate chip cookie dough (such as Pillsbury)',
       '20 Oreo cookies, plus more for topping',
-      '2 (8-oz.) blocks cream cheese, softened',
-      '1/2 c. granulated sugar',
+      '2 blocks cream cheese, softened',
+      '½. granulated sugar',
       '2 large eggs',
-      '1/2 tsp. pure vanilla extract',
+      '½ tsp. pure vanilla extract',
       'Pinch of kosher salt',
       'Warm caramel, for drizzling'
     ],
@@ -813,13 +813,13 @@ final dummymeals = [
         'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/20190628-delish-chocolate-pudding-ehg-290-vertical-1562792025.png?crop=0.9997369113391213xw:1xh;center,top&resize=980:*',
     duration: 180,
     ingredients: [
-      '1/2 c. granulated sugar',
-      '1/4 c. unsweetened cocoa powder',
+      '½ granulated sugar',
+      '½ unsweetened cocoa powder',
       '2 tbsp. cornstarch',
-      '1/2 tsp. kosher salt',
-      '2 1/2 c. milk',
+      '½ tsp. kosher salt',
+      '2 ½ l. milk',
       '3 large egg yolks',
-      '3 oz. chopped bittersweet chocolate',
+      '3 chopped bittersweet chocolate',
       '2 tbsp. butter',
       '1 tsp. pure vanilla extract',
       'Whipped cream, for serving',
@@ -846,15 +846,15 @@ final dummymeals = [
         'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-cookie-dough-ice-cream-sandwiches-1523559186.png?crop=1xw:1xh;center,top&resize=980:*',
     duration: 300,
     ingredients: [
-      '1 c. (2 sticks) melted butter',
+      '1 c. melted butter',
       '1 c. packed brown sugar',
-      '3/4 c. sugar',
-      '1/4 c. milk (preferably whole or 2%)',
+      '½ c. sugar',
+      '½ c. milk (preferably whole or 2%)',
       '1 tsp. pure vanilla extract',
-      '1 1/2 c. mini chocolate chips',
-      '3 qt. vanilla ice cream, softened',
+      '1 ½ mini chocolate chips',
+      '3 vanilla ice cream, softened',
       '1 tsp. kosher salt',
-      '2 1/2 c. all-purpose flour'
+      '2 ½ all-purpose flour'
     ],
     steps: [
       'Line a large baking sheet with parchment paper, leaving overhang on sides. In a large bowl, stir together melted butter, both sugars, milk, and vanilla until combined. Stir in flour and salt, then fold in chocolate chips. ',
@@ -932,8 +932,8 @@ final dummymeals = [
       '1 cup ice cubes',
       '3 fluid ounces pineapple juice',
       '2 fluid ounces orange juice',
-      '1 (1.5 fluid ounce) jigger spiced rum',
-      '½ (1.5 fluid ounce) jigger coconut-flavored rum',
+      '1 jigger spiced rum',
+      '½ jigger coconut-flavored rum',
       '1 teaspoon grenadine syrup'
     ],
     steps: [
