@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meals/app/login/login_page.dart';
 import 'package:meals/domain/models/meal.dart';
 import 'package:meals/screens/categories_screen.dart';
 import 'package:meals/screens/favorites_screen.dart';
@@ -11,13 +12,13 @@ class TabsScreen extends StatefulWidget {
   }) : super(key: key);
 
   final List<Meal> favoriteMeals;
-  
+
   @override
   State<TabsScreen> createState() => _TabsScreenState();
 }
 
 class _TabsScreenState extends State<TabsScreen> {
-  late List<Map<String, dynamic>> _pages;
+   late List<Map<String, dynamic>> _pages;
   int _selectedPageIndex = 0;
 
   @override
@@ -47,6 +48,20 @@ class _TabsScreenState extends State<TabsScreen> {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
+          actions: [
+            IconButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (_) => LoginPage(widget.favoriteMeals),
+                  ),
+                );
+              },
+              icon: const Icon(
+                Icons.logout,
+              ),
+            ),
+          ],
           title: Text(_pages[_selectedPageIndex]['title']),
         ),
         drawer: const MainDrawer(),
