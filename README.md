@@ -1,16 +1,23 @@
-# meals_udemy
+# A Matter Of Taste - Recipes 🍽
 
-A new Flutter project.
 
-## Getting Started
+Application with various recipes.
 
-This project is a starting point for a Flutter application.
+You can add your favorite meals to the favorite food list.
 
-A few resources to get you started if this is your first Flutter project:
+In addition to the recipes, there is also a shopping list.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Thanks to it you will quickly add the ingredients you need. 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+And when you bought, you can remove the ingredient.
+
+
+## See short video:
+
+https://user-images.githubusercontent.com/100914676/181286443-52fc50d7-84c4-4201-b96e-b9934ebca12b.mp4
+
+## See photos:
+
+<img src="assets/images/image1.png" width=200>    <img src="assets/images/image2.png" width=200>    <img src="assets/images/image3.png" width=200>
+<img src="assets/images/image4.png" width=200>    <img src="assets/images/image5.png" width=200>    <img src="assets/images/image6.png" width=200>
+<img src="assets/images/image7.png" width=200>  
