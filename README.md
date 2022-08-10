@@ -1,5 +1,7 @@
 # A Matter Of Taste - Recipes 🍽
 
+This application is on [Google Play:](play.google.com/store/apps/developer?id=Iwona+Rudzi%C5%84ska)
+
 
 Application with various recipes.
 
